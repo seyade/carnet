@@ -1,2 +1,2 @@
 # carnet
-Save whatever caught you eyes from the web
+Save whatever caught your eyes from the web.
