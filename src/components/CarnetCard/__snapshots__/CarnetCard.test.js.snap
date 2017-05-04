@@ -1,0 +1,36 @@
+exports[`CarnetCard renders as intended 1`] = `
+<div
+  className="card carnet-card col-md-4 col-xs-6">
+  <a
+    className="card-remove-btn"
+    href="#"
+    onClick={[Function]}>
+    Remove
+  </a>
+  <div>
+    <h3
+      className="card-title">
+      Sabrina girls!!
+    </h3>
+    <p
+      className="card-url">
+      <a
+        href="http://www.sabrina.co"
+        target="_blank">
+        http://www.sabrina.co
+      </a>
+    </p>
+    <p
+      className="card-info">
+      Some Sabrina best kitchen dishes
+    </p>
+  </div>
+  <div>
+    <a
+      className="card-submit-btn btn btn-primary"
+      onClick={[Function]}>
+      Share
+    </a>
+  </div>
+</div>
+`;

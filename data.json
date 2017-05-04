@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "_id": "5909c98f9c37a0802f409a66",
+      "bookmarkTitle": "Carnet test number 1",
+      "url": "http://www.sampletest.com",
+      "info": "Some sample info text for Carnet",
+      "updatedAt": null,
+      "createdAt": "2017-05-03T12:14:07.699Z"
+    },
+    {
+      "_id": "5909c9c49c37a0802f409a67",
+      "bookmarkTitle": "Carnet test number two",
+      "url": "http://www.testagain.com",
+      "info": "Some sample info text for Carnet for another test.",
+      "updatedAt": null,
+      "createdAt": "2017-05-03T12:15:00.198Z"
+    },
+    {
+      "_id": "5909ca5a9c37a0802f409a68",
+      "bookmarkTitle": "Behance",
+      "url": "http://www.behance.net",
+      "info": "Design inspiration website for creatives.",
+      "updatedAt": null,
+      "createdAt": "2017-05-03T12:17:30.817Z"
+    },
+    {
+      "_id": "5909cb1a9c37a0802f409a69",
+      "bookmarkTitle": "Host Digital case studies",
+      "url": "http://hostdgtl.com/#_case_studies",
+      "info": "Some example of case studies for conversion rates from Host Digital agency.",
+      "updatedAt": null,
+      "createdAt": "2017-05-03T12:20:42.653Z"
+    }
+  ]
+}
