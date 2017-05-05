@@ -1,0 +1,9 @@
+exports[`CarnetCardContainer renders CarnetCardContainer as intended 1`] = `
+<article
+  className="carnet-card-container row pull-right">
+  <h2
+    className="card-container-title">
+    Card Container
+  </h2>
+</article>
+`;

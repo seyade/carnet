@@ -26,7 +26,7 @@ class CarnetCardContainer extends Component {
   render() {
     return (
       <article className="carnet-card-container row pull-right">
-        <h2>Card Container</h2>
+        <h2 className="card-container-title">Card Container</h2>
         {
           this.state.carnets.map((carnet, index) => {
             return <Card carnet={carnet} key={index}/>
