@@ -10,12 +10,12 @@ import CarnetCard from '../CarnetCard/CarnetCard';
 // });
 
 describe('CarnetCard', () => {
-  let carnetcard,
-    carnetData = {
+  let carnetData = {
       bookmarkTitle: 'Sabrina girls!!',
       url: 'http://www.sabrina.co',
       info: 'Some Sabrina best kitchen dishes'
-    };
+    },
+    carnetcard, mockCarnetcard;
 
   beforeEach(() => {
     carnetcard = shallow(<CarnetCard carnet={carnetData} />);
@@ -23,7 +23,7 @@ describe('CarnetCard', () => {
 
 
   it('renders as intended', () => {
-    const component = renderer.create(<CarnetCard carnet={carnetData} />),
+    const component = renderer.create(<CarnetCard carnet={carnetData}/>),
       json = component.toJSON();
 
     expect(json).toMatchSnapshot();
@@ -44,10 +44,28 @@ describe('CarnetCard', () => {
   it('should remove the card', () => {
     const handleRemove = jest.fn();
 
-    expect(carnetcard.find('.card-remove-btn').length).toEqual(1);
+    mockCarnetcard = mount(
+      <div className="card carnet-card col-md-4 col-xs-6">
+        <a href="#" className="card-remove-btn" onClick={handleRemove}>Remove</a>
+      </div>
+    );
 
-    carnetcard.first().find('.card-remove-btn').simulate('click');
-
+    expect(mockCarnetcard.find('.card-remove-btn').length).toEqual(1);
+    mockCarnetcard.first().find('.card-remove-btn').simulate('click');
     expect(handleRemove).toHaveBeenCalled();
+  });
+
+  it('can share the card information via social media', () => {
+    const handleShare = jest.fn();
+
+    mockCarnetcard = mount(
+      <div className="card carnet-card col-md-4 col-xs-6">
+        <a href="#" className="card-share-btn" onClick={handleShare}>Remove</a>
+      </div>
+    );
+
+    expect(mockCarnetcard.find('.card-share-btn').length).toEqual(1);
+    mockCarnetcard.first().find('.card-share-btn').simulate('click');
+    expect(handleShare).toHaveBeenCalled();
   });
 });

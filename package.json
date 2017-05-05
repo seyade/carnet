@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "enzyme": "^2.8.2",
+    "jest-enzyme": "^3.1.0",
     "node-sass": "^4.5.2",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2",

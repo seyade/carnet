@@ -27,7 +27,8 @@ exports[`CarnetCard renders as intended 1`] = `
   </div>
   <div>
     <a
-      className="card-submit-btn btn btn-primary"
+      className="card-share-btn btn btn-primary"
+      href="#"
       onClick={[Function]}>
       Share
     </a>

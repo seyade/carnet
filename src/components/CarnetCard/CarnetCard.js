@@ -27,7 +27,7 @@ class CarnetCard extends Component {
           <p className="card-info">{this.props.carnet.info}</p>
         </div>
         <div>
-          <a className="card-submit-btn btn btn-primary" onClick={this.handleShare}>Share</a>
+          <a href="#" className="card-share-btn btn btn-primary" onClick={this.handleShare}>Share</a>
         </div>
       </div>
     );
