@@ -18,7 +18,7 @@ describe('CarnetCard', () => {
     carnetcard, mockCarnetcard;
 
   beforeEach(() => {
-    carnetcard = shallow(<CarnetCard carnet={carnetData} />);
+    carnetcard = mount(<CarnetCard carnet={carnetData} />);
   });
 
 
