@@ -6,12 +6,13 @@ class CarnetSidebarForm extends Component {
     super(props);
 
     this.state = {
-      urlname: '',
+      bookmarkTitle: '',
       url: '',
       info: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(e) {
@@ -24,30 +25,39 @@ class CarnetSidebarForm extends Component {
     });
   }
 
-  processData(data) {
-    alert('processing data.');
-  }
-
   handleSubmit(e) {
     e.preventDefault();
-    alert('Data saved');
 
-    /*axios.post('http://localhost:3009/api/carnets')
-      .then(response => response);*/
+    let payload = {
+      bookmarkTitle: this.state.bookmarkTitle,
+      url: this.state.url,
+      info: this.state.info
+    };
+
+    this.postCarnet(payload);
+
+    console.log('Payload: ', payload);
+  }
+
+  postCarnet(data) {
+    return axios.post('http://localhost:3009/api/carnets', data)
+      .then(response => {
+        console.log('Response: ', response.message);
+      });
   }
 
   render() {
     return (
       <div className="carnet-form-panel">
-        <form className="carnet-form">
+        <form className="carnet-form" onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label htmlFor="carnet-name-field">Url name</label>
+            <label htmlFor="carnet-bookmarktitle-field">Bookmark Title</label>
             <input className="form-control"
                    type="text"
-                   placeholder="name..."
-                   id="carnet-name-field"
-                   name="urlname"
-                   value={this.state.urlname}
+                   placeholder="bookmark title..."
+                   id="carnet-bookmarktitle-field"
+                   name="bookmarkTitle"
+                   value={this.state.bookmarkTitle}
                    onChange={this.handleChange} />
           </div>
 
@@ -75,11 +85,11 @@ class CarnetSidebarForm extends Component {
             </textarea>
           </div>
 
-          <input className="btn btn-primary" type="submit" value="Save" onClick={this.handleSubmit}/>
+          <input className="btn btn-primary" type="submit" value="Save" />
         </form>
-        <h2>{this.state['urlname']}</h2>
-        <h2>{this.state['url']}</h2>
-        <h2>{this.state['info']}</h2>
+        <div className="post-results-panel">
+          <h2>{}</h2>
+        </div>
       </div>
     );
   }
