@@ -1,0 +1,20 @@
+{
+  "name": "carnet",
+  "description": "bookmark app",
+  "main": "",
+  "authors": [
+    "Seyade <b.kuen@hotmail.co.uk>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/seyade/carnet",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-font-awesome": "^4.7.0"
+  }
+}

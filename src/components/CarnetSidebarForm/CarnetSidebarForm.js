@@ -85,7 +85,7 @@ class CarnetSidebarForm extends Component {
             </textarea>
           </div>
 
-          <input className="btn btn-primary" type="submit" value="Save" />
+          <input className="carnet-submit-btn btn btn-primary" type="submit" value="Save" />
         </form>
         <div className="post-results-panel">
           <h2>{}</h2>

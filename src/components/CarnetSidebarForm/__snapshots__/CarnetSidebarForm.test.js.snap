@@ -1,0 +1,63 @@
+exports[`CarnetSidebarForm renders CarnetSidebarForm as intended 1`] = `
+<div
+  className="carnet-form-panel">
+  <form
+    className="carnet-form"
+    onSubmit={[Function]}>
+    <div
+      className="form-group">
+      <label
+        htmlFor="carnet-bookmarktitle-field">
+        Bookmark Title
+      </label>
+      <input
+        className="form-control"
+        id="carnet-bookmarktitle-field"
+        name="bookmarkTitle"
+        onChange={[Function]}
+        placeholder="bookmark title..."
+        type="text"
+        value="" />
+    </div>
+    <div
+      className="form-group">
+      <label
+        htmlFor="carnet-url-field">
+        Url
+      </label>
+      <input
+        className="form-control"
+        id="carnet-url-field"
+        name="url"
+        onChange={[Function]}
+        placeholder="url..."
+        type="text"
+        value="" />
+    </div>
+    <div
+      className="form-group">
+      <label
+        htmlFor="carnet-info-field">
+        Info
+      </label>
+      <textarea
+        className="form-control"
+        cols="20"
+        id="carnet-info-field"
+        name="info"
+        onChange={[Function]}
+        placeholder="info..."
+        rows="5"
+        value="" />
+    </div>
+    <input
+      className="carnet-submit-btn btn btn-primary"
+      type="submit"
+      value="Save" />
+  </form>
+  <div
+    className="post-results-panel">
+    <h2 />
+  </div>
+</div>
+`;
