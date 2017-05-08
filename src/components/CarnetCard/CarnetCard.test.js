@@ -4,11 +4,6 @@ import renderer from 'react-test-renderer';
 import { shallow, mount } from 'enzyme';
 import CarnetCard from '../CarnetCard/CarnetCard';
 
-// it('renders CarnetCard without crashing', () => {
-//   const div = document.createElement('div');
-//   ReactDOM.render(<CarnetCard />, div);
-// });
-
 describe('CarnetCard', () => {
   let carnetData = {
       bookmarkTitle: 'Sabrina girls!!',
@@ -20,7 +15,6 @@ describe('CarnetCard', () => {
   beforeEach(() => {
     carnetcard = shallow(<CarnetCard carnet={carnetData} />);
   });
-
 
   it('renders as intended', () => {
     const component = renderer.create(<CarnetCard carnet={carnetData}/>),

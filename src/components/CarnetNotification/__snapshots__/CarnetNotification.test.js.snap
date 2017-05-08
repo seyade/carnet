@@ -1,0 +1,6 @@
+exports[`CarnetNotification renders CarnetNotification as intended 1`] = `
+<div
+  className="carnet-notification">
+  <p />
+</div>
+`;
