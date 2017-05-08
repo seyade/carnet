@@ -1,12 +1,11 @@
 {
-  "name": "carnet",
+  "name": "carnet 0.0.1",
   "description": "bookmark app",
   "main": "",
   "authors": [
-    "Seyade <b.kuen@hotmail.co.uk>"
+    "Le Vrai Interactive"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/seyade/carnet",
   "ignore": [
     "**/.*",
     "node_modules",

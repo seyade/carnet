@@ -1,4 +1,3 @@
-// jest.mock('../CarnetSidebarForm/CarnetSidebarForm'); // mock the component before importing it using the right path
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { mount, shallow } from 'enzyme';
@@ -19,24 +18,30 @@ describe('CarnetSidebarForm', () => {
   });
 
   it('has field for bookmark title', () => {
-    expect(carnetform.find('#carnet-bookmarktitle-field').length).toBe(1);
+    let bookmarkField = carnetform.find('#carnet-bookmarktitle-field');
 
-    carnetform.find('#carnet-bookmarktitle-field').node.value = 'Kenichi Strongest disciple';
-    expect(carnetform.find('#carnet-bookmarktitle-field').node.value).toEqual('Kenichi Strongest disciple');
+    expect(bookmarkField.length).toBe(1);
+
+    bookmarkField.node.value = 'Kenichi Strongest disciple';
+    expect(bookmarkField.node.value).toEqual('Kenichi Strongest disciple');
   });
 
   it('has field for url', () => {
-    expect(carnetform.find('#carnet-url-field').length).toBe(1);
+    let urlField = carnetform.find('#carnet-url-field');
 
-    carnetform.find('#carnet-url-field').node.value = 'http://www.kenichi.co';
-    expect(carnetform.find('#carnet-url-field').node.value).toEqual('http://www.kenichi.co');
+    expect(urlField.length).toBe(1);
+
+    urlField.node.value = 'http://www.kenichi.co';
+    expect(urlField.node.value).toEqual('http://www.kenichi.co');
   });
 
   it('has field for info', () => {
-    expect(carnetform.find('#carnet-info-field').length).toBe(1);
+    let infoField = carnetform.find('#carnet-info-field');
 
-    carnetform.find('#carnet-info-field').node.value = 'Kenichi Strongest disciple. He trains at Ryuzanpaku school.';
-    expect(carnetform.find('#carnet-info-field').node.value).toEqual('Kenichi Strongest disciple. He trains at Ryuzanpaku school.');
+    expect(infoField.length).toBe(1);
+
+    infoField.node.value = 'Kenichi Strongest disciple. He trains at Ryuzanpaku school.';
+    expect(infoField.node.value).toEqual('Kenichi Strongest disciple. He trains at Ryuzanpaku school.');
   });
 
   it('should submit form data', () => {
