@@ -1,0 +1,19 @@
+{
+  "name": "carnet 0.0.1",
+  "description": "bookmarking app",
+  "main": "",
+  "authors": [
+    "Le Vrai Interactive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-font-awesome": "^4.7.0"
+  }
+}
