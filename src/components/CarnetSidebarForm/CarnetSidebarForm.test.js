@@ -18,12 +18,12 @@ describe('CarnetSidebarForm', () => {
   });
 
   it('has field for bookmark title', () => {
-    let bookmarkField = carnetform.find('#carnet-bookmarktitle-field');
+    let bookmarkTitleField = carnetform.find('#carnet-bookmarktitle-field');
 
-    expect(bookmarkField.length).toBe(1);
+    expect(bookmarkTitleField.length).toBe(1);
 
-    bookmarkField.node.value = 'Kenichi Strongest disciple';
-    expect(bookmarkField.node.value).toEqual('Kenichi Strongest disciple');
+    bookmarkTitleField.node.value = 'Kenichi Strongest disciple';
+    expect(bookmarkTitleField.node.value).toEqual('Kenichi Strongest disciple');
   });
 
   it('has field for url', () => {
