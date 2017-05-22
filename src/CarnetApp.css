@@ -1,5 +1,5 @@
-.carnet-app {
-
+.card-container-title {
+  margin-top: 50px;
 }
 
 .carnet-sidebar-panel {
@@ -12,12 +12,4 @@
 .carnet-card-container {
   padding: 10px 40px;
   width: 70%;
-}
-
-.carnet-card {
-  width: 250px;
-  border: 1px solid #bbb;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  min-height: 200px;
 }
