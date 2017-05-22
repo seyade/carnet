@@ -5,9 +5,12 @@ exports[`CarnetCard renders as intended 1`] = `
     className="card-remove-btn"
     href="#"
     onClick={[Function]}>
-    Remove
+    Remove 
+    <span
+      className="fa fa-instagram" />
   </a>
-  <div>
+  <div
+    className="card-content-panel">
     <h3
       className="card-title">
       Sabrina girls!!
@@ -25,7 +28,8 @@ exports[`CarnetCard renders as intended 1`] = `
       Some Sabrina best kitchen dishes
     </p>
   </div>
-  <div>
+  <div
+    className="card-options-panel">
     <a
       className="card-share-btn btn btn-primary"
       href="#"

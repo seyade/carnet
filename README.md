@@ -4,6 +4,13 @@
 - The front-end styling is in SASS and Bootstrap.
 - Unit-tested with Jest.
 
+#### How to operate
+- Start connect to database: sudo mongod
+- Start mongodb shell: mongo
+- To start app server: node server.js
+- Start the app: npm start
+- Start unit test: npm run test (--coverage) or npm test
+
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
